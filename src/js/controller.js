@@ -13,7 +13,6 @@ import addRecipeView from './views/addRecipeView.js';
 if (module.hot) {
   module.hot.accept();
 }
-// "parcel-b undler": "^1.12.5", "parcel": "^2.0.0-rc.0",
 //---------------RECIPES-----------------
 
 const controlRecipes = async function () {
@@ -136,9 +135,7 @@ const controlAddRecipe = async function (newRecipe) {
     addRecipeView.renderError(err.message);
   }
 };
-const newFeature = function () {
-  console.log('Welcome to new application');
-};
+
 const init = function () {
   recipeView.addHandlerRender(controlRecipes);
   recipeView.addHandlerUpdateServings(controlServings);
@@ -147,7 +144,6 @@ const init = function () {
   recipeView.addHandlerAddBookmark(controlAddBookmark);
   bookmarksView.addHandlerRender(controlBookmarks);
   addRecipeView.addHandlerUpload(controlAddRecipe);
-  newFeature();
 };
 
 init();
