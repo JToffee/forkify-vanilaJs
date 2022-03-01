@@ -135,10 +135,9 @@ const controlAddRecipe = async function (newRecipe) {
     console.error('NR ', err);
     addRecipeView.renderError(err.message);
   }
-
-  const newFeature = function () {
-    console.log('Welcome to new application');
-  };
+};
+const newFeature = function () {
+  console.log('Welcome to new application');
 };
 const init = function () {
   recipeView.addHandlerRender(controlRecipes);
