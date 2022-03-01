@@ -13,7 +13,7 @@ import addRecipeView from './views/addRecipeView.js';
 if (module.hot) {
   module.hot.accept();
 }
-// "parcel-b undler": "^1.12.5",
+// "parcel-b undler": "^1.12.5", "parcel": "^2.0.0-rc.0",
 //---------------RECIPES-----------------
 
 const controlRecipes = async function () {
